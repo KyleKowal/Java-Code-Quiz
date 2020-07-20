@@ -10,12 +10,69 @@
 
 <body>
 
-    <!-- Begin Header - displays Hall of Fame link and Timer -->
+    <!--Begin Header-->
     <header>
         <div id="hof">High Scores</div>
         <div>Time Remaining: <span id="time">60</span></div>
     </header>
     <!-- End Header -->
+
+    <main>
+        <!--Begin Main-->
+        <section class="container">
+
+            <!--Start Quiz-->
+            <div class="start-div">
+                <h1>Coding Quiz-O-Rama!</h1>
+                <p>Test your Javascript knowledge with this quiz. Answer each question right or else you automatically 
+                    lose 5 seconds off the clock. If you do well enough you can earn yourself a spot on the high scorers 
+                    list!
+                </p>
+                <div class="start-btn">
+                    <button id="start">Start Quiz!</button>
+                </div>
+            </div>
+
+            <!--Questions-->
+            <div class="question-div">
+                <h1 id="question"></h1>
+                <div class="buttons">
+                    <button id="ans-1" value=0></button>
+                    <button id="ans-2" value=1></button>
+                    <button id="ans-3" value=2></button>
+                    <button id="ans-4" value=3></button>
+                </div>
+                <hr>
+                <div id="right-wrong" class="right">Right!</div>
+            </div>
+
+            <!--End Quiz-->
+            <div class="end-div">
+                <h1>Finished!</h1>
+                <h2>Your final score is: <span id="final-score"></span></h2>
+                <form id="score-form">
+                    <label for="initials">Enter your initials</label>
+                    <input type="text" id="initials" size="5" maxlength="3" />
+                    <button id="submit">Submit</button>
+                </form>
+
+            </div>
+
+            <!--High Scorers-->
+            <div class="High Scorers">
+                <h1>High Scorers</h1>
+                <ol id="scores-list"></ol>
+                <div id="hs-btns">
+                    <button id="go-back">Go Back</button>
+                    <button id="clear">Clear High Scorers</button>
+                </div>
+            </div>
+
+        </section>
+        <!--End Main-->
+    </main>
+
+    <script src="./script.js"></script>
 
 
     
