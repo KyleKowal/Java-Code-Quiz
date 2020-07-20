@@ -111,3 +111,20 @@ function startQuiz() {
     show(questionDivEl);
     startTimer();
 }
+
+// Event listener 
+startButton.addEventListener("click", startQuiz);
+
+
+// Load next question
+function nextQuestion() {
+    if (questionIdx < questionBank.length - 1) {
+        questionIdx++;
+        displayQuestion();
+    } else {
+        setTimeout(function () {
+            endQuiz();
+        }, 500)
+
+    }
+}
