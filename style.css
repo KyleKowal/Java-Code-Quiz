@@ -29,6 +29,178 @@ header div#hs:hover {
     cursor: pointer;
 }
 
+/* Main */
+
+main .container {
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 800px) {
+ main .container {
+     width: 200px;
+ }
+}
+
+main .container h1 {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* Start Quiz */
+
+main .container .start-div {
+    display: block;
+}
+
+main .container .start-div p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+main div.start-btn {
+    display: flex;
+    justify-content: center;
+}
+
+main div.start-btn button {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+/* Questions */
+
+main .container .question-div {
+    display: none;
+}
+
+main .container .question-div .buttons {
+    margin-bottom: 10px;
+}
+
+main .container .question-div .buttons button {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .question-div .buttons button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+main .container .question-div #right-wrong {
+    display: none;
+    transition: 0.5s;
+}
+
+main .container .question-div .right {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(0, 255, 0);
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .container .question-div .wrong {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* End Quiz */
+
+main .container .end-div {
+    display: none;
+}
+
+main .container .end-div h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main .container .end-div form {
+    text-align: center;
+}
+
+main .container .end-div form input {
+    font-size: 1.2rem;
+}
+
+main .container .end-div label {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+main .container .end-div button {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .end-div button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* High Scorers */
+
+main .container .high-scorers {
+    display: none;
+}
+
+main .container .high-scorers ol li {
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main .container .high-scorers ol li:nth-child(odd) {
+    background-color:  rgb(255, 255, 255);
+}
+
+main .container .high-scorers ol li:nth-child(even) {
+    background-color:  rgb(255, 255, 255);
+}
+
+main .container .high-scorers div#hof-btns {
+    margin-top: 20px;
+}
+
+main .container .high-scorers div#hof-btns button {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main .container .high-scorers div#hs-btns button:hover {
+    background-color: rgb(255, 255, 255);
+}
 
 
 
