@@ -91,7 +91,7 @@ main .container .question-div .buttons {
 
 main .container .question-div .buttons button {
     display: block;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Times New Roman", Times, serif;
     font-size: 1.4rem;
     background-color: rgb(255, 255, 255);
     padding: 10px;
