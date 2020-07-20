@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Header */
+
+header {
+    background-color: rgb(48, 119, 119);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* High Scorers */
+
+header div#hs {
+    color: black;
+    font-weight: bold;
+}
+
+header div#hs:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+
