@@ -62,3 +62,52 @@ function show(element) {
     element.setAttribute("style", "display: block;");
 }
 
+// Quiz Functions
+
+
+function displayQuestion() {
+    const currQuestion = questionBank[questionIdx];
+    questionEl.textContent = currQuestion.question;
+    const possibleAnswers = currQuestion.possibleAns;
+    for (let i = 0; i < possibleAnswers.length; i++) {
+        answerButtons.children[i].textContent = possibleAnswers[i];
+    }
+}
+
+
+// End Quiz
+function endQuiz() {
+    clearInterval(timerInterval); 
+    timerEl.textContent = 0; 
+
+    
+    if (secondsLeft < 0) {
+        secondsLeft = 0;
+    }
+
+    finalScoreEl.textContent = secondsLeft;
+    hide(questionDivEl); 
+    show(endDivEl); 
+
+}
+
+// Starts timer interval
+function startTimer() {
+    timerInterval = setInterval(function () {
+        secondsLeft--; 
+        timerEl.textContent = secondsLeft; 
+        if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+            
+            endQuiz();
+        }
+    }, 1000)
+}
+
+// Starts quiz
+function startQuiz() {
+    hide(startDivEl);
+    displayQuestion();
+    show(questionDivEl);
+    startTimer();
+}
