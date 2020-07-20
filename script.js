@@ -19,4 +19,46 @@ const scoresList = document.querySelector("ol#scores-list");
 const clearHofBtn = document.querySelector("button#clear");
 const goBackHofBtn = document.querySelector("button#go-back");
 
+// Quiz questions sourced from w3 schools
+// https://www.w3schools.com/js/js_quiz.asp
+const questionBank = [
+    {
+        question: "Inside which HTML element do we put the JavaScript?",
+        possibleAns: ["a. <scripting>", "b. <script>", "c. js", "d. javascript"],
+        correctAns: 1
+    },
+    {
+        question: "How does a FOR loop start??",
+        possibleAns: ["a. for i = 1 to 5 ", "b. for (i <= 5; i++)", "c. for (i = 0; i <= 5)", "d. for (i = 0; i <= 5; i++) "],
+        correctAns: 3
+    },
+    {
+        question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
+        possibleAns: ["a. <script href='xxx.js'>", "b. <script name='xxx.js'>", "c. <script value='xxx.js'>", "d. <script src='xxx.js'>"],
+        correctAns: 3
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        possibleAns: ["a. onclick  ", "b. onmouseover", "c. onmouseclick", "d. onchange"],
+        correctAns: 0
+    },
+
+
+
+];
+
+// Quiz variables
+
+let questionIdx = 0;
+let secondsLeft = 60;
+let timerInterval;
+let flashTimeout;
+
+function hide(element) {
+    element.setAttribute("style", "display: none;");
+}
+
+function show(element) {
+    element.setAttribute("style", "display: block;");
+}
 
